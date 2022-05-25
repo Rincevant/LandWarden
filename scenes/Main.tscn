@@ -11,32 +11,21 @@ margin_top = 235.0
 margin_right = 606.0
 margin_bottom = 262.0
 text = "Nouvelle partie"
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Quit" type="Button" parent="."]
-margin_left = 440.0
-margin_top = 289.0
-margin_right = 599.0
-margin_bottom = 314.0
+margin_left = 430.0
+margin_top = 279.0
+margin_right = 606.0
+margin_bottom = 306.0
 text = "Quitter"
 
-[node name="Save" type="Button" parent="."]
-margin_left = 442.0
-margin_top = 369.0
-margin_right = 601.0
-margin_bottom = 394.0
-text = "Save"
-
 [node name="Load" type="Button" parent="."]
-margin_left = 442.0
-margin_top = 411.0
-margin_right = 601.0
-margin_bottom = 436.0
-text = "Load"
+margin_left = 430.0
+margin_top = 322.0
+margin_right = 606.0
+margin_bottom = 349.0
+text = "Charger"
 
 [connection signal="pressed" from="NewGame" to="." method="_on_NewGame_pressed"]
 [connection signal="pressed" from="Quit" to="." method="_on_Quit_pressed"]
-[connection signal="pressed" from="Save" to="." method="_on_Save_pressed"]
 [connection signal="pressed" from="Load" to="." method="_on_Load_pressed"]
