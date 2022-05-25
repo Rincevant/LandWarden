@@ -5,11 +5,14 @@ public class CreateChar : Node2D
 {
     private Hero hero;
 
+    private Progression progression;
+
     private string heroName = "";
 
     private Sprite frameChar;
     public override void _Ready()
     {
+        progression = Progression.GetInstance();
         frameChar = GetNode<Sprite>("FrameChar");
     }
 
@@ -46,7 +49,8 @@ public class CreateChar : Node2D
             GD.Print("Impossible de creer le hero....");
         } else {
             this.hero.name = this.heroName;
-            GD.Print("Creation d'un : " + this.hero + " avec le nom de : " + this.hero.name);
+            progression.setHero(this.hero);
+            Utils.saveGame();
         }
     }
 }

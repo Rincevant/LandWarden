@@ -1,11 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ORn+348VfPMAzisUZassWMOfwOqjwy0vVBbi4PYtVmF+VcNyKZiNv01GQXV94XXtTbEx4O1RQ8+w+XpT6+NdPw==",
+  "dgSpecHash": "5K7SDxba1l8WTXDkEQE7nYW4dT5xbCkgziUafUWh2cRy8ndbJM6W8KrGNsBcKnQ7eXgY/UUGcZoWA0vStcWB9g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jperona\\Desktop\\LandWarden\\Land Warden.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\jperona\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.2\\microsoft.netframework.referenceassemblies.1.0.2.nupkg.sha512",
-    "C:\\Users\\jperona\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net472\\1.0.2\\microsoft.netframework.referenceassemblies.net472.1.0.2.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\peron\\OneDrive\\Bureau\\LandWarden\\Land Warden.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }
