@@ -25,5 +25,8 @@ public class Main : Node2D
         Progression prog = Progression.GetInstance();
         GD.Print(prog.getHero().name);
         GD.Print(prog.getHero().GetType());
+        GD.Print(prog.getHero().pv);
+        GD.Print(prog.getHero().mana);
+        GD.Print(prog.getHero().frenesie);
     }
 }

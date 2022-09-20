@@ -1,4 +1,5 @@
 using Godot;
+using System;
 public static class Utils
 {
     public static void saveGame()
@@ -8,7 +9,11 @@ public static class Utils
         var saveData = new Godot.Collections.Dictionary<string, object>()
         {
             { "heroName", progression.getHero().name },
-            { "heroClasse" , progression.getHero().GetType().ToString() }
+            { "heroClasse" , progression.getHero().GetType().ToString() },
+            { "heroPv" , progression.getHero().pv.ToString() },
+            { "heroFrenesie" , progression.getHero().frenesie.ToString() },
+            { "heroFinesse" , progression.getHero().finesse.ToString() },
+            { "heroMana" , progression.getHero().mana.ToString() }
         };
         var saveGame = new File();
         saveGame.OpenEncryptedWithPass("user://savegame.save", File.ModeFlags.Write, "mypass");
@@ -52,6 +57,10 @@ public static class Utils
 
         if (hero != null) {
             hero.name = data["heroName"].ToString();
+            hero.pv = Int32.Parse((string) data["heroPv"]);
+            hero.mana = Int32.Parse((string) data["heroMana"]);
+            hero.finesse = Int32.Parse((string) data["heroFinesse"]);
+            hero.frenesie = Int32.Parse((string) data["heroFrenesie"]);
         }
 
         return hero;

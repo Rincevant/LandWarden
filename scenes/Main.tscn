@@ -25,6 +25,9 @@ margin_top = 322.0
 margin_right = 606.0
 margin_bottom = 349.0
 text = "Charger"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [connection signal="pressed" from="NewGame" to="." method="_on_NewGame_pressed"]
 [connection signal="pressed" from="Quit" to="." method="_on_Quit_pressed"]

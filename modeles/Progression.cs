@@ -14,12 +14,6 @@
             }
             return _instance;
         }
-        
-        public void someBusinessLogic()
-        {
-            GD.Print("Bsuiness logic");
-        }
-
         public void setHero(Hero hero) 
         {
             this.hero = hero;
