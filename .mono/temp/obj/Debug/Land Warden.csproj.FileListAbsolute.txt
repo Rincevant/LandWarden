@@ -1,9 +1,0 @@
-C:\Users\peron\OneDrive\Bureau\LandWarden\.mono\temp\bin\Debug\Land Warden.dll
-C:\Users\peron\OneDrive\Bureau\LandWarden\.mono\temp\bin\Debug\Land Warden.pdb
-C:\Users\peron\OneDrive\Bureau\LandWarden\.mono\temp\obj\Debug\Land Warden.csproj.AssemblyReference.cache
-C:\Users\peron\OneDrive\Bureau\LandWarden\.mono\temp\obj\Debug\Land Warden.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\peron\OneDrive\Bureau\LandWarden\.mono\temp\obj\Debug\Land Warden.AssemblyInfoInputs.cache
-C:\Users\peron\OneDrive\Bureau\LandWarden\.mono\temp\obj\Debug\Land Warden.AssemblyInfo.cs
-C:\Users\peron\OneDrive\Bureau\LandWarden\.mono\temp\obj\Debug\Land Warden.csproj.CoreCompileInputs.cache
-C:\Users\peron\OneDrive\Bureau\LandWarden\.mono\temp\obj\Debug\Land Warden.dll
-C:\Users\peron\OneDrive\Bureau\LandWarden\.mono\temp\obj\Debug\Land Warden.pdb
