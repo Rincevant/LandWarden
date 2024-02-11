@@ -1,7 +1,7 @@
 using Godot;
 using System;
 
-public class CreateChar : Node2D
+public partial class CreateChar : Node2D
 {
     private Hero hero;
 
@@ -9,11 +9,11 @@ public class CreateChar : Node2D
 
     private string heroName = "";
 
-    private Sprite frameChar;
+    private Sprite2D frameChar;
     public override void _Ready()
     {
         progression = Progression.GetInstance();
-        frameChar = GetNode<Sprite>("FrameChar");
+        frameChar = GetNode<Sprite2D>("FrameChar");
     }
 
     public void _on_NameChar_text_changed() {
@@ -27,15 +27,15 @@ public class CreateChar : Node2D
         {
         case "Warrior":
             this.hero = new Warrior("");
-            heroTexture.Load("res://images/warriorFull.jpg");
+            heroTexture.SetImage(Image.LoadFromFile("res://images/warriorFull.jpg")); 
             break;
         case "Mage":
             this.hero = new Mage("");
-            heroTexture.Load("res://images/mageFull.jpg");
+            heroTexture.SetImage(Image.LoadFromFile("res://images/mageFull.jpg"));
             break;
         case "Rogue":
             this.hero = new Rogue("");
-            heroTexture.Load("res://images/rogueFull.jpg");
+            heroTexture.SetImage(Image.LoadFromFile("res://images/rogueFull.jpg"));
             break;
         default:            
             break;

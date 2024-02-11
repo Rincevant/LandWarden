@@ -1,6 +1,6 @@
 using Godot;
 using System;
-public class Room {
+public partial class Room {
 
     // these values hold grid coordinates for each corner of the room
     public int x1;

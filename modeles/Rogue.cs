@@ -1,4 +1,4 @@
-public class Rogue : Hero
+public partial class Rogue : Hero
 {
 
     public Rogue(string name) : base(name) {

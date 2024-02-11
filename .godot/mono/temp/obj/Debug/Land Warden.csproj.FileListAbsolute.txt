@@ -1,0 +1,17 @@
+C:\Users\peron\OneDrive\Bureau\LandWarden\.godot\mono\temp\obj\Debug\Land Warden.csproj.AssemblyReference.cache
+C:\Users\peron\OneDrive\Bureau\LandWarden\.godot\mono\temp\obj\Debug\Land Warden.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\peron\OneDrive\Bureau\LandWarden\.godot\mono\temp\obj\Debug\Land Warden.AssemblyInfoInputs.cache
+C:\Users\peron\OneDrive\Bureau\LandWarden\.godot\mono\temp\obj\Debug\Land Warden.AssemblyInfo.cs
+C:\Users\peron\OneDrive\Bureau\LandWarden\.godot\mono\temp\obj\Debug\Land Warden.csproj.CoreCompileInputs.cache
+C:\Users\peron\OneDrive\Bureau\LandWarden\.godot\mono\temp\bin\Debug\Land Warden.deps.json
+C:\Users\peron\OneDrive\Bureau\LandWarden\.godot\mono\temp\bin\Debug\Land Warden.runtimeconfig.json
+C:\Users\peron\OneDrive\Bureau\LandWarden\.godot\mono\temp\bin\Debug\Land Warden.dll
+C:\Users\peron\OneDrive\Bureau\LandWarden\.godot\mono\temp\bin\Debug\Land Warden.pdb
+C:\Users\peron\OneDrive\Bureau\LandWarden\.godot\mono\temp\bin\Debug\GodotSharp.dll
+C:\Users\peron\OneDrive\Bureau\LandWarden\.godot\mono\temp\bin\Debug\GodotSharpEditor.dll
+C:\Users\peron\OneDrive\Bureau\LandWarden\.godot\mono\temp\obj\Debug\Land Warden.csproj.CopyComplete
+C:\Users\peron\OneDrive\Bureau\LandWarden\.godot\mono\temp\obj\Debug\Land Warden.dll
+C:\Users\peron\OneDrive\Bureau\LandWarden\.godot\mono\temp\obj\Debug\refint\Land Warden.dll
+C:\Users\peron\OneDrive\Bureau\LandWarden\.godot\mono\temp\obj\Debug\Land Warden.pdb
+C:\Users\peron\OneDrive\Bureau\LandWarden\.godot\mono\temp\obj\Debug\Land Warden.genruntimeconfig.cache
+C:\Users\peron\OneDrive\Bureau\LandWarden\.godot\mono\temp\obj\Debug\ref\Land Warden.dll

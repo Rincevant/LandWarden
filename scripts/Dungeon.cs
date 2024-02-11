@@ -1,7 +1,7 @@
 using Godot;
 using System;
 
-public class Dungeon : Node2D
+public partial class Dungeon : Node2D
 { 
     private int MAP_WIDTH = 5;
     private int MAP_HEIGHT = 9;
@@ -23,11 +23,11 @@ public class Dungeon : Node2D
 		Map map = new Map(MAP_HEIGHT * DUNGEON_SIZE, MAP_WIDTH * DUNGEON_SIZE, NB_ROOMS);
 		map.initMap();
 
-        cameraX = (int) Math.Floor(map.entry.x / MAP_WIDTH);
-		cameraY = (int) Math.Floor(map.entry.y / MAP_HEIGHT);        
+        cameraX = (int) Math.Floor(map.entry.X / MAP_WIDTH);
+		cameraY = (int) Math.Floor(map.entry.Y / MAP_HEIGHT);        
         
         GD.Print(cameraX + " " + cameraY);
-        GD.Print(map.entry.x + " " + map.entry.y);
+        GD.Print(map.entry.X + " " + map.entry.Y);
         
         for (int i = 0; i < MAP_HEIGHT ; i++)
         {
@@ -36,7 +36,7 @@ public class Dungeon : Node2D
 				Case dungeonCase = new Case();
                 dungeonCase.Name = "CaseTest";
                 dungeonCase.SetPosition(new Vector2((j * 100) + 50, (i * 100) + 50 ));
-                dungeonCase.Texture = (Texture)GD.Load(getDungeonTexture(map.mapValues[(cameraY * MAP_HEIGHT) + i, (cameraX * MAP_WIDTH) + j]));
+                dungeonCase.Texture = (Texture2D)GD.Load(getDungeonTexture(map.mapValues[(cameraY * MAP_HEIGHT) + i, (cameraX * MAP_WIDTH) + j]));
                 this.AddChild(dungeonCase);
             }			
         }

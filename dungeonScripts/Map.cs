@@ -1,5 +1,5 @@
 using Godot;
-public class Map {
+public partial class Map {
     public int width;
     public int height;
 
@@ -57,7 +57,7 @@ public class Map {
         this.exit = setupSquareWithUniqueValue(3); 
 
         // If same entry and exit
-        if (this.entry.x == this.exit.x && this.entry.y == this.exit.y) {            
+        if (this.entry.X == this.exit.X && this.entry.Y == this.exit.Y) {            
             initMap();
         }
     }
@@ -88,28 +88,28 @@ public class Map {
         Vector2 centerR2 = room2.center;
 
         // Connect on X
-        if (centerR1.x < centerR2.x) {
-            for ( float i = centerR1.x; i < centerR2.x; i++)
+        if (centerR1.X < centerR2.X) {
+            for ( float i = centerR1.X; i < centerR2.X; i++)
             {
-                this.mapValues[(int)centerR1.y, (int) i] = 1;
+                this.mapValues[(int)centerR1.Y, (int) i] = 1;
             }            
-        } else if (centerR1.x > centerR2.x) {
-            for (float i = centerR1.x; i > centerR2.x; i--)
+        } else if (centerR1.X > centerR2.X) {
+            for (float i = centerR1.X; i > centerR2.X; i--)
             {
-                this.mapValues[(int) centerR1.y, (int) i] = 1;
+                this.mapValues[(int) centerR1.Y, (int) i] = 1;
             }
         }
 
         // Connect on Y
-        if (centerR1.y < centerR2.y) {
-            for (float i = centerR1.y; i < centerR2.y; i++)
+        if (centerR1.Y < centerR2.Y) {
+            for (float i = centerR1.Y; i < centerR2.Y; i++)
             {
-                this.mapValues[(int) i , (int) centerR2.x] = 1;
+                this.mapValues[(int) i , (int) centerR2.X] = 1;
             }
-        } else if (centerR1.y > centerR2.y) {
-            for (float i = centerR1.y; i > centerR2.y; i--)
+        } else if (centerR1.Y > centerR2.Y) {
+            for (float i = centerR1.Y; i > centerR2.Y; i--)
             {
-                this.mapValues[(int) i, (int) centerR2.x] = 1;
+                this.mapValues[(int) i, (int) centerR2.X] = 1;
             }
         }        
     }
@@ -150,8 +150,8 @@ public class Map {
         rnd.Randomize(); 
         int randomRoom = rnd.RandiRange(0,this.nb_rooms - 1);
         Vector2 randomPoint = new Vector2(rnd.RandiRange(0,4), rnd.RandiRange(0,4));       
-        this.mapValues[this.rooms[randomRoom].y1 + (int) randomPoint.y, this.rooms[randomRoom].x1 + (int) randomPoint.x] = uniqueValue;
+        this.mapValues[this.rooms[randomRoom].y1 + (int) randomPoint.Y, this.rooms[randomRoom].x1 + (int) randomPoint.X] = uniqueValue;
 
-        return new Vector2(this.rooms[randomRoom].x1 + randomPoint.x, this.rooms[randomRoom].y1 + randomPoint.y);
+        return new Vector2(this.rooms[randomRoom].x1 + randomPoint.X, this.rooms[randomRoom].y1 + randomPoint.Y);
     }
 }

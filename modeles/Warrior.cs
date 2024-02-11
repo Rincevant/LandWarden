@@ -1,4 +1,4 @@
-public class Warrior : Hero
+public partial class Warrior : Hero
 {
     public Warrior(string name) : base(name) {        
         this.frenesie = 100;

@@ -1,4 +1,4 @@
-public class Hero
+public partial class Hero
 {
     public string name { get; set; }
     public int pv { get; set; }
